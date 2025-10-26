@@ -28,6 +28,9 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	
+	// Swagger/OpenAPI Documentation
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
+	
 	// Arrow for Railway-Oriented Programming
 	implementation("io.arrow-kt:arrow-core:1.2.0")
 	implementation("io.arrow-kt:arrow-fx-coroutines:1.2.0")
