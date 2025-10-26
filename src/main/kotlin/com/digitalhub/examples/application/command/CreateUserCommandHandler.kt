@@ -20,9 +20,9 @@ class CreateUserCommandHandler(
             }
             .flatMap { (email, name) ->
                 val user = User.create(
-                    id = UserId.generate(),
-                    email = email,
-                    name = name
+                    id = UserId.generate().value,
+                    email = email.value,
+                    name = name.value
                 )
                 userRepository.save(user)
             }

@@ -1,9 +1,10 @@
 spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/kotlin-ddd
+      database: kotlin-ddd
   application:
     name: kotlin-functional-ddd
 
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/development
-      database: development
-      uuid-representation: standard
+server:
+  port: 8080
