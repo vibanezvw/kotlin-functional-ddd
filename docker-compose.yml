@@ -6,6 +6,7 @@ services:
     network_mode: host
     volumes:
       - mongodb_data:/data/db
+      - ./src/main/resources/db:/docker-entrypoint-initdb.d
     healthcheck:
       test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
       interval: 5s
