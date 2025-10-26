@@ -1,0 +1,17 @@
+services:
+  mongodb:
+    image: mongo:8.0.12
+    container_name: kotlin-functional-ddd-mongodb
+    command: mongod --replSet rs0 --bind_ip_all
+    network_mode: host
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 5s
+      timeout: 30s
+      retries: 5
+    restart: always
+
+volumes:
+  mongodb_data:

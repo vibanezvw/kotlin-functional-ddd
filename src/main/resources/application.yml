@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: kotlin-functional-ddd
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/development
+      database: development
+      uuid-representation: standard
