@@ -1,10 +1,10 @@
-package com.digitalhub.examples.functional
+package com.digitalhub.examples
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class KotlinFunctionalDddApplicationTests {
+class App {
 
 	@Test
 	fun contextLoads() {
