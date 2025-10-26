@@ -1,5 +1,18 @@
 # Getting Started
 
+## API Documentation
+
+The API is fully documented using OpenAPI 3.0 (Swagger). Once the application is running, you can access:
+
+* **Swagger UI**: http://localhost:8080/swagger-ui.html - Interactive API documentation with the ability to test endpoints
+* **OpenAPI Spec**: http://localhost:8080/v3/api-docs - Raw OpenAPI specification in JSON format
+
+The documentation includes:
+- Complete endpoint descriptions in Spanish
+- Request/Response examples
+- Schema definitions with field descriptions
+- HTTP status codes and error responses
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
@@ -9,6 +22,7 @@ For further reference, please consider the following sections:
 * [Spring Web](https://docs.spring.io/spring-boot/3.5.7/reference/web/servlet.html)
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/3.5.7/reference/actuator/index.html)
 * [Spring Data MongoDB](https://docs.spring.io/spring-boot/3.5.7/reference/data/nosql.html#data.nosql.mongodb)
+* [SpringDoc OpenAPI](https://springdoc.org/) - OpenAPI 3 & Swagger UI integration
 
 ### Guides
 The following guides illustrate how to use some features concretely:
